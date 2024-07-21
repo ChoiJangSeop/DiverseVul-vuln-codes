@@ -1,0 +1,60 @@
+CalendarRegressionTest::runIndexedTest( int32_t index, UBool exec, const char* &name, char* /*par*/ )
+{
+    // if (exec) logln((UnicodeString)"TestSuite NumberFormatRegressionTest");
+    switch (index) {
+        CASE(0,test4100311);
+        CASE(1,test4074758);
+        CASE(2,test4028518);
+        CASE(3,test4031502);
+        CASE(4,test4035301);
+        CASE(5,test4040996);
+        CASE(6,test4051765);
+        CASE(7,test4061476);
+        CASE(8,test4070502);
+        CASE(9,test4071197);
+        CASE(10,test4071385);
+        CASE(11,test4073929);
+        CASE(12,test4083167);
+        CASE(13,test4086724);
+        CASE(14,test4095407);
+        CASE(15,test4096231);
+        CASE(16,test4096539);
+        CASE(17,test41003112);
+        CASE(18,test4103271);
+        CASE(19,test4106136);
+        CASE(20,test4108764);
+        CASE(21,test4114578);
+        CASE(22,test4118384);
+        CASE(23,test4125881);
+        CASE(24,test4125892);
+        CASE(25,test4141665);
+        CASE(26,test4142933);
+        CASE(27,test4145158);
+        CASE(28,test4145983);
+        CASE(29,test4147269);
+
+        CASE(30,Test4149677);
+        CASE(31,Test4162587);
+        CASE(32,Test4165343);
+        CASE(33,Test4166109);
+        CASE(34,Test4167060);
+        CASE(35,Test4197699);
+        CASE(36,TestJ81);
+        CASE(37,TestJ438);
+        CASE(38,TestLeapFieldDifference);
+        CASE(39,TestMalaysianInstance);
+        CASE(40,test4059654);
+        CASE(41,test4092362);
+        CASE(42,TestWeekShift);
+        CASE(43,TestTimeZoneTransitionAdd);
+        CASE(44,TestDeprecates);
+        CASE(45,TestT5555);
+        CASE(46,TestT6745);
+        CASE(47,TestT8057);
+        CASE(48,TestT8596);
+        CASE(49,Test9019);
+        CASE(50,TestT9452);
+        CASE(51,TestT11632);
+    default: name = ""; break;
+    }
+}

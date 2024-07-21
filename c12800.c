@@ -1,0 +1,31 @@
+bool all_tests () {
+	mu_run_test (test_r_str_newf);
+	mu_run_test (test_r_str_replace_char_once);
+	mu_run_test (test_r_str_replace_char);
+	mu_run_test (test_r_str_replace);
+	mu_run_test (test_r_str_bits64);
+	mu_run_test (test_r_str_rwx);
+	mu_run_test (test_r_str_rwx_i);
+	mu_run_test (test_r_str_bool);
+	mu_run_test (test_r_str_trim);
+	mu_run_test (test_r_str_case);
+	mu_run_test (test_r_str_split);
+	mu_run_test (test_r_str_tokenize);
+	mu_run_test (test_r_str_char_count);
+	mu_run_test (test_r_str_word_count);
+	mu_run_test (test_r_str_ichr);
+	mu_run_test (test_r_str_lchr);
+	mu_run_test (test_r_sub_str_lchr);
+	mu_run_test (test_r_sub_str_rchr);
+	mu_run_test (test_r_str_rchr);
+	mu_run_test (test_r_str_ansi_len);
+	mu_run_test (test_r_str_len_utf8_ansi);
+	mu_run_test (test_r_str_utf8_charsize);
+	mu_run_test (test_r_str_utf8_charsize_prev);
+	mu_run_test (test_r_str_sanitize_sdb_key);
+	mu_run_test (test_r_str_unescape);
+	mu_run_test (test_r_str_constpool);
+	mu_run_test (test_r_str_format_msvc_argv);
+	mu_run_test (test_r_str_str_xy);
+	return tests_passed != tests_run;
+}

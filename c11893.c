@@ -1,0 +1,1 @@
+tlb_update_vma_flags(struct mmu_gather *tlb, struct vm_area_struct *vma) { }

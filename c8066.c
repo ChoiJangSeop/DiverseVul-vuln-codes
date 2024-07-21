@@ -1,0 +1,1 @@
+static int restore_fp(struct task_struct *tsk) { return 0; }

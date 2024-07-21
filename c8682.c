@@ -1,0 +1,14 @@
+static uint64_t pac_inv_sub(uint64_t i)
+{
+    static const uint8_t inv_sub[16] = {
+        0x5, 0xe, 0xd, 0x8, 0xa, 0xb, 0x1, 0x9,
+        0x2, 0x6, 0xf, 0x0, 0x4, 0xc, 0x7, 0x3,
+    };
+    uint64_t o = 0;
+    int b;
+
+    for (b = 0; b < 64; b += 16) {
+        o |= (uint64_t)inv_sub[(i >> b) & 0xf] << b;
+    }
+    return o;
+}

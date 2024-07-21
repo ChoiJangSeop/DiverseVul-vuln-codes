@@ -1,0 +1,1 @@
+static void timer_stats_account_timer(struct timer_list *timer) {}

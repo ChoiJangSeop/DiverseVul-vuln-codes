@@ -1,0 +1,1 @@
+ConnectionImpl::~ConnectionImpl() { nghttp2_session_del(session_); }

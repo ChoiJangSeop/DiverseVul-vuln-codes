@@ -1,0 +1,4 @@
+AvahiService::~AvahiService()
+{
+    stop();
+}

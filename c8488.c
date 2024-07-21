@@ -1,0 +1,17 @@
+VideoTrack::VideoTrack(unsigned int* seed)
+    : Track(seed),
+      display_height_(0),
+      display_width_(0),
+      pixel_height_(0),
+      pixel_width_(0),
+      crop_left_(0),
+      crop_right_(0),
+      crop_top_(0),
+      crop_bottom_(0),
+      frame_rate_(0.0),
+      height_(0),
+      stereo_mode_(0),
+      alpha_mode_(0),
+      width_(0),
+      colour_(NULL),
+      projection_(NULL) {}

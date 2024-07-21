@@ -1,0 +1,1 @@
+bool ActiveStreamDecoderFilter::complete() { return parent_.state_.remote_complete_; }

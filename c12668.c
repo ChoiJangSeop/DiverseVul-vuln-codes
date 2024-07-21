@@ -1,0 +1,3 @@
+MONGO_EXPORT int bson_append_symbol_n( bson *b, const char *name, const char *value, int len ) {
+    return bson_append_string_base( b, name, value, len, BSON_SYMBOL );
+}
